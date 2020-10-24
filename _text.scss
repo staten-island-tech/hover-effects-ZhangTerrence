@@ -1,0 +1,12 @@
+@import "_variables";
+
+.text {
+  text-transform: uppercase;
+  font-size: 5rem;
+  transition: all 0.25s;
+}
+
+.text:hover {
+  transform: skewY(-25deg);
+  letter-spacing: 5rem;
+}

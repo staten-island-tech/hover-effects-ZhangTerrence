@@ -1,0 +1,48 @@
+@import "_variables.scss";
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding: 2.5rem 4rem;
+  margin: 1rem auto;
+  border-radius: 10rem;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.btn::after {
+  content: none;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.25s;
+}
+
+.btn-1 {
+  background-color: gold;
+  color: black;
+}
+
+.btn-1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7.5px 1rem black;
+}
+
+.btn-2 {
+  background-color: black;
+  color: white;
+}
+
+.btn-2:hover {
+  transition: all 1s;
+  background-color: gray;
+  color: black;
+}

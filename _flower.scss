@@ -1,0 +1,12 @@
+@import "_variables.scss";
+
+.flower {
+  height: 20vh;
+  transition: all 0.75s;
+  border-radius: 50%;
+}
+
+.flower:hover {
+  border-radius: 0;
+  transform: scale(1.25);
+}
