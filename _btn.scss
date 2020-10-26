@@ -13,8 +13,18 @@
   position: relative;
 }
 
+.btn {
+  background-color: gold;
+  color: black;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7.5px 1rem black;
+}
+
 .btn::after {
-  content: none;
+  content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -26,23 +36,7 @@
   transition: all 0.25s;
 }
 
-.btn-1 {
-  background-color: gold;
-  color: black;
-}
-
-.btn-1:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 7.5px 1rem black;
-}
-
-.btn-2 {
-  background-color: black;
-  color: white;
-}
-
-.btn-2:hover {
-  transition: all 1s;
-  background-color: gray;
-  color: black;
+.btn:active {
+  transform: translateY(1px) scaleX(1.25) scaleY(1.25);
+  box-shadow: 0 0.5rem 1rem black;
 }
